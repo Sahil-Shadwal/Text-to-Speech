@@ -11,7 +11,7 @@ function toggleButton(){
 
 //Passing joke to VoiceRSS API
 function tellMe(joke) {
-    console.log('tell me:', joke);
+    // console.log('tell me:', joke);
     function test() {
         VoiceRSS.speech({
             key: '3e04dece5e3d4afd9dda22bcffa03371',
@@ -29,7 +29,8 @@ function tellMe(joke) {
 //Get Jokes from joke api
 async function getJokes() {
     let joke = '';
-    const apiUrl = "https://v2.jokeapi.dev/joke/Programming,Dark,Spooky";
+    // const apiUrl = "https://v2.jokeapi.dev/joke/Programming,Dark,Spooky";
+    const apiUrl = "https://v2.jokeapi.dev/joke/Programming,Miscellaneous,Dark,Pun,Spooky";
     try{
         const response = await fetch(apiUrl);
         const data = await response.json();
