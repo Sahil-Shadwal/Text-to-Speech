@@ -47,7 +47,7 @@ button:active {
 
 button:disabled {
   cursor: defalut;
-  filter: brightness(30%);
+  filter: brightness(60%);
 }
 
 /* Media Query: Tablet or Smaller */
